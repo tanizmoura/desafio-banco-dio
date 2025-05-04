@@ -56,15 +56,12 @@ while True:
             print("Saque realizado com sucesso!")
             extrato += f"Saque no valor de R${valor_saque:.2f}\nSaldo da conta: R${valor_conta:.2f}\n\n"
             qtd_saque += 1
-            print(qtd_saque)
 
         elif qtd_saque == LIMITE_SAQUE:
             print("Quantidade de saques excedidas. Tente novamente amanhã!")
-            print(qtd_saque)
 
         else:
             print("Informe um valor maior que zero!")
-            print(qtd_saque)
 
 
 
