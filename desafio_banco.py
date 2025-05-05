@@ -9,6 +9,14 @@ def saque(valor_saque, valor_conta):
     valor_conta -= valor_saque
     return valor_conta
     
+#Verifica se o valor digitado é um numero válido
+def is_float(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
+    
 
 #Imprime o menu interativo
 menu = """
@@ -37,7 +45,7 @@ while True:
 
             valor_saque = input("Informe o valor que deseja sacar: R$")
 
-            if valor_saque.isnumeric():
+            if is_float(valor_saque):
                 valor_saque = float(valor_saque)
                 print(valor_saque)
                 break
@@ -72,7 +80,7 @@ while True:
 
             valor_deposito = input("Informe o valor que deseja depositar: R$")
 
-            if valor_deposito.isnumeric():
+            if is_float(valor_deposito):
                 valor_deposito = float(valor_deposito)
                 break
             else:
