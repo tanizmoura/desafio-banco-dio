@@ -13,4 +13,9 @@ O objetivo desse projeto é simular um sistema de banco básico onde é possíve
 
 **Menu**:
 O menu é composto por 4 opções:
-[S] para saque, [D] para depósito, [E] para extrato e [Q] para fechar o programa. Se digitado um valor diferente é exibido uma mensagem de erro. O valor digitado pode ser tanto maiúsculo quanto minúsculo.
+[S] para saque, [D] para depósito, [E] para extrato, [C] para cadastro de cliente, [Y] para cadastro de conta e [Q] para fechar o programa. Se digitado um valor diferente é exibido uma mensagem de erro. O valor digitado pode ser tanto maiúsculo quanto minúsculo.
+
+**Cadastro de Cliente**: Faz o cadastro de um novo cliente verificando se o cpf já existe na lista, caso exista exibe uma mensagem de alerta. Só é possivel cadastrar uma conta se existir um cliente cadastrado.
+
+**Cadastro de Conta**: Verifica se existe cliente cadastrado através do cpf, se existir cria uma nova conta em uma lista de contas. Clientes podem ter várias contas mas uma conta só pode ter vínculo com apenas um cliente.
+
